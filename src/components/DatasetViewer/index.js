@@ -1,8 +1,8 @@
 // @flow
 
 import React, { useEffect, useState } from "react"
-import { makeStyles } from "@mui/material/styles"
-import { parse as queryString } from "query-string"
+import { makeStyles } from "@mui/styles"
+import { parseUrl } from "query-string"
 import Button from "@mui/material/Button"
 import axios from "axios"
 import NLPAnnotator from "../NLPAnnotator"
@@ -41,7 +41,7 @@ export default () => {
   useEffect(() => {
     async function loadData() {
       const { load_url: loadUrl, output_name: outputName } =
-        queryString(window.location.search) || {}
+      //parseUrl(window.location.search) || {}
 
       changeMetaInfo({ loadUrl, outputName })
 

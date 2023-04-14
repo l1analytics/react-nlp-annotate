@@ -1,8 +1,8 @@
 // @flow
 
 import React from "react"
-import { makeStyles } from "@mui/material/styles"
-import { ThemeProvider, createMuiTheme } from "@mui/material/styles"
+import { makeStyles } from "@mui/styles"
+import { ThemeProvider, createTheme } from '@mui/material/styles' 
 import "./theme.css"
 
 const useStyles = makeStyles({
@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   }
 })
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     fontFamily: '"Inter UI", "Roboto", sans-serif'
   },

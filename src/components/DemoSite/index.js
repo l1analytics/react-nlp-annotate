@@ -4,11 +4,11 @@ import ReactDOM from "react-dom"
 import Editor, { examples } from "./Editor"
 import NLPAnnotator from "../NLPAnnotator"
 import ErrorBoundaryDialog from "./ErrorBoundaryDialog.js"
-import { parse as queryString } from "query-string"
+// /import { parse as queryString } from "query-string"
 import { Base64 } from "js-base64"
 
 function getInitialAnnotatorProps() {
-  const { load } = queryString(window.location.search) || {}
+  const { load } = {} //queryString(window.location.search) || {}
 
   if (load) {
     try {
