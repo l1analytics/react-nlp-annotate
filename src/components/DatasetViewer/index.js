@@ -1,7 +1,7 @@
 // @flow
 
 import React, { useEffect, useState } from "react"
-import { makeStyles } from "@mui/styles"
+import { makeStyles } from "@mui/material/styles"
 import { parse as queryString } from "query-string"
 import Button from "@mui/material/Button"
 import axios from "axios"
